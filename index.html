@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Brian Whitney" />
+<title>brian whitney</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id = "first-section">
+        <h1>Brian Whitney</h1>
+
+        <div id = "about">
+            <div class = "gridded">
+                <div id = "aboutleft">
+                    <h2>Welcome to my website!</h2>
+                    <h4>I'm a freshman at UC Berkeley intending Data Science. Through organizing tech conferences, STEM workshops introducing thousands of teens to tech and coding for the first time, and managing $35K in our grant funding, I come in with a unique perspective on how tech can reshape education, and am capable of collaboration, determination, and leadership.<br /><br />To the right is most definitely a photo of me!</h4>
+                </div>
+                <div id = "aboutright">
+                    <img src="red-panda-myface.jpeg" alt="actually me!">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "work">
+        <div id = "work-text">
+            <h2>Projects</h2>
+            <div class = "project">
+                <div class = "project-text">
+                <h3>TeenTechSF // TAY Mentor/fmr President</h3>
+                <p>TeenTechSF’s mission is to provide equal access to tech for all teens because diversity fuels innovation. Run for and by teens, all events are free. Since lauching, TeenTechSF has connected 2000+ teens and 200+ schools from around the Bay Area to tech leaders, entrepreneurs, and innovators from Apple to Zynga in conferences, summits, interactive STEM workshops, and hackathons. 
+                
+                    At TeenTechSF, I’ve worked with partners and sponsors such as Facebook, Stanford RISE, and Make School, pitched in front of “investors” for grants, and led the team tranistion to our successful online STEM workshop curriculum.</p>
+                </div>
+            </div>
+
+            <div class = "project">
+                <div class = "project-text">
+                <h3>Myntor // Product Design Intern</h3>
+                <p>User tested with 50+ teens to acquire customer feedback on how to optimize platform; Reported back with weekly updates on customer problem feedback, mockups of potential 
+                    design solutions using Figma, Google Drawings, and Google Slides; Developed technical spec sheet for engineering team to implement design changes, including
+                    new Discussion Boards feature & updates to settings page, affecting all 1200+ users</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "contact">
+            <div id = "contact-text">
+            <h2>Contact me!</h2>
+            <h5>LinkedIn: <a href="https://linkedin.com/in/brianr-w/" target = "_blank">brianr-w</a></h5>
+            <form>
+                <label for = "word">Type a color:</label>
+                <input type = "text" id = "word" name = "word">
+                <input type = "submit" value = "Go!" onclick = "clicked()">
+            </form>
+
+            <br />
+            <h6>Website created for the Full Stack Dev Decal by WDB.</h6>
+        </div>
+    </div>
+
+    <script>
+        function clicked(){
+            let colorpicked = document.getElementById("word").value;
+            alert("I see you have selected the color "+colorpicked)
+        }
+    </script>
+
+</body>
